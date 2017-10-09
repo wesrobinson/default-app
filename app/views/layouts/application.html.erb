@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DefaultApp</title>
+    <title><%= @header_title %></title>
+    <%= favicon_link_tag 'transparent-lips.png' %>
     <%= csrf_meta_tags %>
-
+    <link href="https://fonts.googleapis.com/css?family=Scope+One|Raleway" rel="stylesheet">
+    <link href='//fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C900&#038;ver=4.5' rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -11,6 +13,42 @@
   </head>
 
   <body>
+    <div class='container header-container'>
+      <ul class='desktop-nav-container'>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/podcast">Podcast</a>
+        </li>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+        <li>
+          <a href="/about_me">About</a>
+        </li>
+        <li>
+          <a href="/contact_me">Contact</a>
+        </li>
+      </ul>
+      <div class='header-title-container'><%= @header_title %></div>
+    </div>
+
+    <div class='container photos-container'>
+      <div class='thumbnail-image-container' style='background: url(/assets/lesslie-wall.png) no-repeat;'>
+      </div>
+      <div class='thumbnail-image-container' style='background: url(/assets/lesslie-rooftop.png) no-repeat;'>
+      </div>
+      <div class='thumbnail-image-container' style='background: url(/assets/lesslie-fridge.png) no-repeat;'>
+      </div>
+      <div class='thumbnail-image-container' style='background: url(/assets/lesslie-sunset.png) no-repeat;'>
+      </div>
+      <div class='thumbnail-image-container' style='background: url(/assets/lesslie-bikini.png) no-repeat;'>
+      </div>
+      <div class='thumbnail-image-container' style='background: url(/assets/lesslie-rainbow.png) no-repeat;'>
+      </div>
+    </div>
+
     <%- if current_user.present? %>
       <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -51,5 +89,26 @@
     <div class='container'>
       <%= yield %>
     </div>
+
+    <footer>
+      <ul class='social-icons-container'>
+        <li>
+          <a href="https://www.facebook.com/carolesslie" target="_blank"><i class='fa fa-facebook'></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/LeslieCaro" target="_blank"><i class='fa fa-twitter'></i></a>
+        </li>
+        <li style='margin-right: 3px;'>
+          <a href="https://www.instagram.com/lessliecaro" target="_blank"><i class='fa fa-instagram'></i></a>
+        </li>
+        <li>
+          <a href="/contact_me"><i class='fa fa-envelope'></i></a>
+        </li>
+      </ul>
+
+      <div class='copyright-container'>
+        © Lesslie Caro 2017
+      </div>
+    </footer>
   </body>
 </html>

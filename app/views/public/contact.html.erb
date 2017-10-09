@@ -1,0 +1,32 @@
+<div class='lead-form-header'>
+  <p class='strong'>
+    Let's work together!
+  </p>
+  <p>
+    For brand or PR inquiries please use this form:
+  </p>
+</div>
+<div class='lead-form-container'>
+  <%= form_for @lead, remote: true do |f| %>
+    <div class='form-group'>
+      <%= f.label :name, "Name (required)" %>
+      <%= f.text_field :name, class: 'form-control', required: 'required' %>
+    </div>
+    <div class='form-group'>
+      <%= f.label :email, "Email (required)" %>
+      <%= f.text_field :email, class: 'form-control', required: 'required' %>
+    </div>
+    <div class='form-group'>
+      <%= f.label :subject %>
+      <%= f.text_field :subject, class: 'form-control' %>
+    </div>
+    <div class='form-group'>
+      <%= f.label :message %>
+      <%= f.text_area :message, class: 'form-control', style: 'height: 160px; border-radius: 30px;' %>
+    </div>
+    <%= f.submit "SEND", id: 'lead-create-button' %>
+    <div class='success-message'>
+      Thank you for your message. It has been sent.
+    </div>
+  <% end %>
+</div>

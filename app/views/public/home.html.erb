@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MrCaro</title>
+    <%= csrf_meta_tags %>
+    <%= favicon_link_tag 'transparent-lips.png' %>
+    <link href="https://fonts.googleapis.com/css?family=Scope+One" rel="stylesheet">
+    <%= stylesheet_link_tag 'public_home', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class='public-home-container container'>
+      <div class='public-home-header'>
+        <div class='public-home-header-title'>
+          CARO
+        </div>
+      </div>
+      <div class='public-home-content'>
+        <%= link_to image_tag('pyramid.png'), "https://www.instagram.com/lessliecaro", target: "_blank", class: 'home-icon', id: 'pyramid-icon' %>
+        <%= link_to image_tag('flowers.png'), "/contact_me", class: 'home-icon', id: 'flowers-icon' %>
+        <%= link_to image_tag('golf.png'), "https://twitter.com/LeslieCaro", target: "_blank", class: 'home-icon', id: 'golf-icon' %>
+        <br/>
+        <%= link_to image_tag('puzzle.png'), "https://www.facebook.com/carolesslie", target: "_blank", class: 'home-icon', id: 'puzzle-icon' %>
+        <%= link_to image_tag('cheese.png'), "/about_me", class: 'home-icon', id: 'cheese-icon' %>
+        <%= link_to image_tag('egg.png'), "/podcast", class: 'home-icon', id: 'egg-icon' %>
+        <%= link_to image_tag('squares.png'), "/blog", class: 'home-icon', id: 'squares-icon' %>
+      </div>
+    </div>
+  </body>
+</html>

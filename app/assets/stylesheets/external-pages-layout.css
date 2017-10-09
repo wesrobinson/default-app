@@ -1,0 +1,179 @@
+body {
+  font-family: 'didot', serif;
+}
+
+p.strong {
+  font-weight: bold;
+}
+
+body a {
+  color: black;
+}
+
+.photos-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.thumbnail-image-container {
+  width: 185px;
+  height: 185px;
+  overflow: hidden;
+  display: flex;
+  flex: 1;
+  background-size: 200px !important;
+  background-position: center !important;
+}
+.thumbnail-image {
+  display: none;
+}
+
+footer {
+  width: 50%;
+  border-top: 1px solid #e0e0e0;
+  height: 100px;
+  position: relative;
+  margin: 100px auto;
+  margin-bottom: 5px;
+}
+
+.copyright-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+}
+
+.header-title-container {
+  clear: both;
+  margin-top: 60px;
+}
+
+ul.social-icons-container {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+  margin: 0 auto;
+  margin-top: -14px;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  padding-top: 3px;
+  padding-right: 2px;
+}
+ul.desktop-nav-container {
+  list-style-type: none;
+  margin-top: 10px;
+  float: right;
+}
+ul.desktop-nav-container li {
+  float: left;
+  font-size: 13px;
+  margin-right: 10px;
+  flex: 1;
+}
+ul.desktop-nav-container li a {
+  text-decoration: none;
+  color: pink;
+}
+ul.desktop-nav-container li a:hover {
+  color: black !important;
+}
+ul.social-icons-container li {
+  font-size: 16px;
+  display: flex;
+  flex: 1;
+}
+ul.social-icons-container li a {
+  margin: 0 auto;
+}
+
+/* Contact Form */
+.lead-form-header {
+  margin-top: 50px;
+}
+.lead-form-header p {
+  text-align: center;
+  margin: 0;
+  font-family: "Didot", sans-serif;
+}
+
+form .form-control {
+  background-color: #ebebeb;
+  border-radius: 50px;
+  border: none;
+  box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.1);
+}
+.form-group label {
+  margin-bottom: 0;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+form .form-group {
+  font-family: "Raleway", sans-serif;
+}
+
+.header-container {
+  background-color: #FAE6E7;
+  height: 190px;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 50px;
+  padding-top: 0px;
+}
+
+.lead-form-container form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#lead-create-button {
+    display: inline-block;
+    font-weight: normal;
+    margin: 0;
+    line-height: normal;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    white-space: nowrap;
+    -webkit-transition: 0.18s background-color ease, color 0.18s ease, 0.18s border-color ease;
+    transition: 0.18s background-color ease, color 0.18s ease, 0.18s border-color ease;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: 50px;
+    width: auto;
+    height: auto;
+    background-image: none;
+    padding: 12px 25px 11px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    background-color: #111;
+    color: #FFF;
+    font-family: "Raleway", sans-serif !important;
+    float: right;
+}
+
+.success-message {
+  width: 100%;
+  border: 2px solid green;
+  clear: both;
+  padding: 3px;
+  display: none;
+  padding-left: 10px;
+  font-size: 13px;
+  margin-top: 70px;
+  font-family: "Didot", sans-serif;
+}
+
+@media(max-width: 991px) {
+  .lead-form-container form {
+    width: 90% !important;
+  }
+/* Contact form end */

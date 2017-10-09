@@ -1,0 +1,59 @@
+.public-home-container {
+  font-family: 'Scope One', serif;
+  padding-top: 30px;
+}
+
+.public-home-header-title {
+  font-size: 65px;
+  text-align: center;
+}
+
+.public-home-content {
+  max-width: 940px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.public-home-content .home-icon {
+  position: absolute;
+}
+
+.public-home-content .home-icon img {
+  max-width: 200px;
+}
+
+#pyramid-icon {
+  top: 0;
+  left: 50px;
+}
+#flowers-icon {
+  top: 20px;
+  right: 310px;
+}
+#golf-icon {
+  right: 50px;
+  top: -50px;
+}
+#puzzle-icon {
+  top: 320px;
+  left: -50px;
+}
+#cheese-icon {
+  top: 220px;
+  left: 220px;
+}
+#egg-icon {
+  top: 380px;
+  right: 270px;
+}
+#egg-icon img {
+  width: 200px;
+}
+
+#squares-icon {
+  right: -50px;
+  top: 210px;
+}
+#squares-icon img {
+  width: 200px;
+}
